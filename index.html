@@ -21,12 +21,12 @@
 </head>
 <body>
     <div id="bg" class=" h-screen flex justify-center items-center">
-        <div class="h-54  w-44  truncate shadow-2xl rounded-lg relative" ondblclick="myfunction(this)">
+        <div class="h-54  w-1/4  truncate shadow-2xl rounded-lg relative" ondblclick="myfunction(this)">
             <img class="" src="https://images.unsplash.com/photo-1710065574765-a685385c6d9a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <i id="heart" class="fa-solid text-4xl text-white opacity-90 fa-heart absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] scale-0 transition-all delay-2000"></i>
-            <div>
-                <i id="innerheart" class="fa-solid fa-heart text-white ml-2 mr-2"></i>
-                <span id="count" class="text-white text-md">0</span>
+            <div class="p-3">
+                <i id="innerheart" class="fa-solid text-7xl fa-heart text-white ml-2 mr-5"></i>
+                <span id="count" class="text-white text-6xl">0</span>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
         function myfunction(element){
             let heart = document.getElementById('heart')
             let innerheart = document.getElementById('innerheart')
-            heart.style.transform = 'translate(-50%, -50%) scale(1)'
+            heart.style.transform = 'translate(-50%, -50%) scale(4.5)'
             heart.style.opacity = 0.9
             innerheart.style.color = "red"
             console.log("hello");
